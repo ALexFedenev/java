@@ -1,17 +1,17 @@
 public class TaskWork3 {
     public static void main(String[] args) {
-        int[] nums = new int[5];
-        nums[0] = 1;
-        nums[1] = 2;
-        nums[2] = 4;
-        nums[3] = 100;
-        nums[4]=15;
-        int temp = nums[0];
-        nums[0]=nums[4];
-        nums[4]=temp;
-        int last = nums[nums.length - 1];
-        int center = nums[(nums.length - 1)/2];
-        System.out.print(last+center);
+        double nums []  = new double[5];
+        nums[0] = 35.555;
+        nums[1] = 2575.554;
+        nums[2] = 574.3875;
+        nums[3] = 1550.318;
+        nums[4]=355.928;
+        double last = nums[nums.length - 1];
+        double temp = nums[0];
+        nums[0] = last;
+        nums[4] = temp;
+        double center = nums[(nums.length - 1)/2];
+        System.out.print(nums[0]+center);
     }
 }
 
