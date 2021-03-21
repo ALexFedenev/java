@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class TaskWork6 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.println(">Что будем конвертировать: \n >1-масса \n >2-длинна");
+        System.out.println(">Что будем конвертировать: \n >1-масса \n >2-расстояние");
         String what = in.next();
         switch (what) {
             case "2": System.out.println(">Выберем единицу измерения:\n >1-метр\n >2-миля\n >3-ярд\n >4-фут");
