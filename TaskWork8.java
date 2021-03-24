@@ -13,7 +13,7 @@ public class TaskWork8 {
         }
         int sum = 0;
         for (int a = 0; a < size; a++) {
-            if (myArray[a] % 2 - 1 == 0) {
+            if (myArray[a] % 2 != 0) {
                 sum += myArray[a];
             }
         }
