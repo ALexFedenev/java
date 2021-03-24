@@ -21,6 +21,7 @@ public class TaskWork7 {
                 break;
             }
         }
+        in.close();
     }
 }
 
