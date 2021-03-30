@@ -18,32 +18,32 @@ public class TaskWork16 {
         char ch3 = '=';
         char ch4 = str.charAt(4);
         int result = 0;
-        int res1 = 0;
+        int result1 = 0;
         int resultX = 0;
         if (ch4 == 'x' & ch1 == '+') {
             result = Character.getNumericValue(ch);
-            res1 = Character.getNumericValue(ch2);
-            resultX = (result + res1);
+            result1 = Character.getNumericValue(ch2);
+            resultX = (result + result1);
         } else if (ch4 == 'x' & ch1 == '-') {
             result = Character.getNumericValue(ch);
-            res1 = Character.getNumericValue(ch2);
-            resultX = (result - res1);
+            result1 = Character.getNumericValue(ch2);
+            resultX = (result - result1);
         } else if (ch == 'x' & ch1 == '+') {
             result = Character.getNumericValue(ch4);
-            res1 = Character.getNumericValue(ch2);
-            resultX = (result - res1);
+            result1 = Character.getNumericValue(ch2);
+            resultX = (result - result1);
         } else if (ch == 'x' & ch1 == '-') {
             result = Character.getNumericValue(ch4);
-            res1 = Character.getNumericValue(ch2);
-            resultX = (result + res1);
+            result1 = Character.getNumericValue(ch2);
+            resultX = (result + result1);
         } else if (ch2 == 'x' & ch1 == '+') {
             result = Character.getNumericValue(ch4);
-            res1 = Character.getNumericValue(ch);
-            resultX = (result - res1);
+            result1 = Character.getNumericValue(ch);
+            resultX = (result - result1);
         } else if (ch2 == 'x' & ch1 == '-') {
             result = Character.getNumericValue(ch4);
-            res1 = Character.getNumericValue(ch);
-            resultX = (res1 - result);
+            result1 = Character.getNumericValue(ch);
+            resultX = (result1 - result);
         }
         System.out.println("x=" + resultX);
         in.close();
