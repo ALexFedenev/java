@@ -8,12 +8,16 @@ public class TaskWork17 {
         System.out.println("Введите количество строк: ");
         int lengthArr = in.nextInt();
         String stringArr[] = new String[lengthArr];
-        System.out.println("Введите строки: ");
         for (int i = 0; i < stringArr.length; i++) {
+            System.out.println("Введите строку " + (i + 1));
             stringArr[i] = in.next();
         }
         for (int i = 0; i < lengthArr; i++) {
-            System.out.println(stringArr[i].length());
+            for (int x = 0; x < stringArr[i].length(); x++) {
+                char ch = stringArr[i].charAt(x);
+                System.out.println(ch);
+            }
         }
     }
 }
+
