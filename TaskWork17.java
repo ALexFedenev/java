@@ -12,12 +12,21 @@ public class TaskWork17 {
             System.out.println("Введите строку " + (i + 1));
             stringArr[i] = in.next();
         }
+        int cont = 0;
+        char ch = 0;
+        char ch1 = 0;
         for (int i = 0; i < lengthArr; i++) {
             for (int x = 0; x < stringArr[i].length(); x++) {
-                char ch = stringArr[i].charAt(x);
-                System.out.println(ch);
+                for (int c = x + 1; c < stringArr[i].length(); c++) {
+                    if (stringArr[i].charAt(x) == stringArr[i].charAt(c)) {
+                        ch =stringArr[i].charAt(c);
+                        System.out.println(ch);
+                    }
+                }
             }
+            System.out.println(ch);
         }
     }
 }
+
 
