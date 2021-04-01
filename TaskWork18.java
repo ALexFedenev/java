@@ -24,6 +24,7 @@ public class TaskWork18 {
                         System.out.println("Почти как лук");
                         i = 2;
                     } else System.out.println("Подсказка уже не доступна");
+                    i--;
                     break;
                 default:
                     if (i < 3) System.out.println(NOK);
