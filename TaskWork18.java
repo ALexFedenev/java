@@ -10,14 +10,11 @@ public class TaskWork18 {
         final String NOK = "Подумай еще";
         final String SHTOSH = "Обидно, приходи в другой раз";
         final String SOVET = "Подсказка";
-        String inputUser = null;
-        boolean result = false;
-        final int A = 3;
+        String userInput = null;
         System.out.println("Отгадайте загадку: \n Сидит дед, во сто шуб одет, кто его раздевает, тот слезы проливает");
-
-        for (int i = 1; i <= A; i++) {
-            inputUser = in.nextLine();
-            switch (inputUser) {
+        for (int i = 1; i <= 3; i++) {
+            userInput = in.nextLine();
+            switch (userInput) {
                 case ANSWER:
                     System.out.println(OK);
                     i = 3;
@@ -28,8 +25,9 @@ public class TaskWork18 {
                         i = 2;
                     } else System.out.println("Подсказка уже не доступна");
                     break;
-                default: if(i<3) System.out.println(NOK);
-                else System.out.println(SHTOSH);
+                default:
+                    if (i < 3) System.out.println(NOK);
+                    else System.out.println(SHTOSH);
             }
         }
     }
