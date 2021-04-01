@@ -23,11 +23,13 @@ public class TaskWork18 {
                     i = 3;
                     break;
                 case SOVET:
-                    if (i == 1) System.out.println("Почти как лук");
-                    else System.out.println(SHTOSH);
+                    if (i == 1) {
+                        System.out.println("Почти как лук");
+                        i = 2;
+                    } else System.out.println("Подсказка уже не доступна");
                     break;
-                default:
-                    System.out.println(NOK);
+                default: if(i<3) System.out.println(NOK);
+                else System.out.println(SHTOSH);
             }
         }
     }
