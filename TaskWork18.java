@@ -31,6 +31,7 @@ public class TaskWork18 {
                     else System.out.println(SHTOSH);
             }
         }
+        in.close();
     }
 }
 
