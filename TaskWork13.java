@@ -17,5 +17,6 @@ public class TaskWork13 {
                 count++;
         }
         System.out.println(count);
+        in.close();
     }
 }
