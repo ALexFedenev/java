@@ -22,6 +22,7 @@ public class TaskWork17 {
             }
         }
         System.out.println(stringArr[maxStrIndex]);
+        in.close();
     }
 }
 
